@@ -28,7 +28,7 @@
                 </button>
             </div>
         </div>
-        <div class="">
+        <div class="my-auto">
             <button class="bg-purple-700 hover:bg-purple-800 transition-all text-white px-4 py-2 rounded-md text-sm focus:outline-none">
                 <i class="fa fa-plus"></i>
                 افزودن کاربر
@@ -76,13 +76,13 @@
                         <th scope="col" class="px-1 py-3 w-24 text-center border border-gray-200 text-md font-bold text-gray-800">
                             موجودی
                         </th>
-                        <th scope="col" class="px-2 py-3 text-center border border-gray-200 text-md font-bold text-gray-800">
+                        <th scope="col" class="px-2 py-3 w-52 text-center border border-gray-200 text-md font-bold text-gray-800">
                             دسته بندی
                         </th>
                         <th scope="col" class="px-6 py-3 text-center border border-gray-200 text-md font-bold text-gray-800"></th>
                       </tr>
 
-                      <tr class="h-12 bg-gray-50">
+                      <tr class="h-12 bg-gray-100">
                         <td class=""></td>
                         <td class=""></td>
                         <td class="px-4 py-4">
@@ -90,7 +90,7 @@
                                 <span class="z-10 h-full leading-snug font-normal right-0 text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 py-3">
                                   <i class="fa fa-search"></i>
                                 </span>
-                                <input type="text" placeholder="پیدا کردن کالا" class="py-3 pr-10 placeholder-gray-400 text-gray-700 relative bg-white rounded text-sm shadow outline-none focus:outline-none focus:shadow-outline w-full"/>
+                                <input type="text" placeholder="پیدا کردن کالا" class="py-3 pr-10 placeholder-gray-400 text-gray-700 relative bg-white rounded text-sm outline-none focus:outline-none focus:shadow-outline w-full"/>
                             </div>
                         </td>
                         <td class="px-4 py-4">
@@ -98,12 +98,19 @@
                                 <span class="z-10 h-full leading-snug font-normal right-0 text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 py-3">
                                   <i class="fa fa-search"></i>
                                 </span>
-                                <input type="text" placeholder="پیدا کردن کالا" class="py-3 pr-10 placeholder-gray-400 text-gray-700 relative bg-white rounded text-sm shadow outline-none focus:outline-none focus:shadow-outline w-full"/>
+                                <input type="text" placeholder="پیدا کردن کالا" class="py-3 pr-10 placeholder-gray-400 text-gray-700 relative bg-white rounded text-sm outline-none focus:outline-none focus:shadow-outline w-full"/>
                             </div>
                         </td>
                         <td class=""></td>
                         <td class=""></td>
-                        <td class=""></td>
+                        <td class="">
+                            <div class="relative ">
+                                <span class="z-10 h-full leading-snug font-normal right-0 text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 py-3">
+                                  <i class="fa fa-search"></i>
+                                </span>
+                                <input type="text" placeholder="پیدا کردن کالا" class="py-3 pr-10 placeholder-gray-400 text-gray-700 relative bg-white rounded text-sm outline-none focus:outline-none focus:shadow-outline w-full"/>
+                            </div>
+                        </td>
                         <td class=""></td>
                       </tr>
                     </thead>

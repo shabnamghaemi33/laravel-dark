@@ -482,7 +482,7 @@
                 </ul>
             </div>
         </div>
-        <div class="md:mr-20 bg-purple-200">
+        <div class="md:mr-20 bg-gray-light">
             <div class="w-full flex flex-row-reverse">
                 <div class="px-16 w-full mt-14 md:mt-0">
                     <div class="header flex justify-between my-4">
