@@ -5,8 +5,8 @@
     <div class="w-full flex flex-row-reverse">
         <div class="px-16 w-full mt-14 md:mt-0">
             <div class="dashboard my-7">
-                <div class="dashboard-header flex flex-row-reverse">
-                    <div class="inline-block w-16">
+                <div class="dashboard-header md:flex md:flex-row-reverse">
+                    <div class="pixel:block pixel:mx-auto md:mx-0 md:inline-block w-16">
                         <img src="./img/8.jpg" alt="logo" width="70" height="70" class="rounded-full">
                     </div>
                     <div class="greeting inline-block mr-4">

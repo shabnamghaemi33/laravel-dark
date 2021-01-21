@@ -25,8 +25,8 @@
         </style>
     </head>
     <body>
-        
-        <div class="w-20 bg-gray-50 h-screen fixed right-0">
+        {{-- right menu on windows size --}}
+        <div class="w-20 bg-gray-50 h-screen fixed right-0 pixel:hidden md:block">
             <div class="top-link h-14 flex align-items">
                 <a href="/" class="flex mx-auto">
                     <img src="./img/logo.svg" alt="main logo" class="top-logo h-9 my-auto" />
@@ -41,7 +41,7 @@
                             </svg>
                         </a>
                     </li>
-                    <li class="w-20 h-14 flex items-center border-r-4 border-indigo-700">
+                    <li class="w-20 h-14 flex items-center">
                         <a href="#" class="mx-auto">
                             <svg xmlns="http://www.w3.org/2000/svg" class="text-gray-400 hover:text-indigo-700 " width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-grid sidebar-svg">
                                 <rect x="3" y="3" width="7" height="7"></rect>
@@ -51,7 +51,7 @@
                             </svg>
                         </a>
                     </li>
-                    <li class="w-20 h-14 flex items-center border-r-4 border-indigo-700">
+                    <li class="w-20 h-14 flex items-center">
                         <a href="#" class="mx-auto">
                             <svg xmlns="http://www.w3.org/2000/svg" class="text-gray-400 hover:text-indigo-700 " width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-box sidebar-svg">
                                 <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
@@ -60,7 +60,7 @@
                             </svg>
                         </a>
                     </li>
-                    <li class="w-20 h-14 flex items-center border-r-4 border-indigo-700">
+                    <li class="w-20 h-14 flex items-center">
                         <a href="#" class="mx-auto">
                             <svg xmlns="http://www.w3.org/2000/svg" class="text-gray-400 hover:text-indigo-700 " width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-cpu sidebar-svg">
                                 <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
@@ -76,7 +76,7 @@
                             </svg>
                         </a>
                     </li>
-                    <li class="w-20 h-14 flex items-center border-r-4 border-indigo-700">
+                    <li class="w-20 h-14 flex items-center">
                         <a href="#" class="mx-auto">
                             <svg xmlns="http://www.w3.org/2000/svg" class="text-gray-400 hover:text-indigo-700 " width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-circle sidebar-svg">
                                 <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
@@ -85,7 +85,7 @@
                     </li>
                 </ul>
                 <ul class="absolute bottom-2">
-                    <li class="w-20 h-14 flex items-center border-r-4 border-indigo-700">
+                    <li class="w-20 h-14 flex items-center">
                         <a href="#" class="mx-auto">
                             <svg xmlns="http://www.w3.org/2000/svg" class="text-gray-400 hover:text-indigo-700 " width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search sidebar-svg">
                                 <circle cx="11" cy="11" r="8"></circle>
@@ -93,7 +93,7 @@
                             </svg>
                         </a>
                     </li>
-                    <li class="w-20 h-14 flex items-center border-r-4 border-indigo-700">
+                    <li class="w-20 h-14 flex items-center">
                         <a href="#" class="mx-auto">
                             <svg xmlns="http://www.w3.org/2000/svg" class="text-gray-400 hover:text-indigo-700 animate-spin" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-settings sidebar-svg">
                                 <circle cx="12" cy="12" r="3"></circle>
@@ -110,6 +110,7 @@
                 </ul>
             </div>
         </div>
+        {{-- top menu on mobile size --}}
         <div class="h-14 bg-white block md:hidden fixed w-full">
             <div class="flex flex-row-reverse justify-between">
                 <div class="relative w-14 h-14 text-center pr-4">
@@ -132,7 +133,8 @@
                 </div>
             </div>
         </div>
-        <div class="mt-12 bg-white h-screen w-14 right-0 fixed block md:hidden">
+        {{-- i dont remember what is this --}}
+        {{-- <div class="mt-12 bg-white h-screen w-14 right-0 fixed block md:hidden">
             <div class="">
                 <ul class="">
                     <li class="w-14 h-14 flex items-center">
@@ -162,8 +164,9 @@
                     </li>
                 </ul>
             </div>
-        </div>
-        <div class="w-60 h-screen fixed bg-blue-100 right-20 hidden ">
+        </div> --}}
+        {{-- submenu from the right --}}
+        <div class="w-60 h-screen fixed bg-white right-20 hidden">
             <div class="px-5">
                 <div class="mt-4 mx-auto items-center flex flex-row-reverse">
                     <div class="cursor-pointer inline-block mr-4">
@@ -482,9 +485,10 @@
                 </ul>
             </div>
         </div>
+        {{-- content --}}
         <div class="md:mr-20 bg-gray-light h-screen">
             <div class="w-full flex flex-row-reverse">
-                <div class="px-16 w-full mt-14 md:mt-0">
+                <div class="px-4 w-full mt-14 md:mt-0">
                     <div class="header flex justify-between my-4">
                         <div class="">
                             <span class="relative inline-block items-center transition-all cursor-pointer rounded-full bg-transparent hover:bg-white w-8 h-8">
@@ -511,7 +515,7 @@
                             <div class="inline-block text-xl md:text-2xl mr-2 text-gray-700">
                                 @yield('dashboard')
                             </div>
-                            <div class="inline-block relative w-7 h-7 cursor-pointer">
+                            <div class="inline-block relative w-7 h-7 cursor-pointer pixel:hidden md:block">
                                 <span class="w-6 h-0.5 bg-indigo-700 absolute right-0 top-1"></span>
                                 <span class="w-4 h-0.5 bg-indigo-700 absolute right-0 top-3"></span>
                                 <span class="w-6 h-0.5 bg-indigo-700 absolute top-5 right-0"></span>
@@ -519,6 +523,7 @@
                         </div>
                     </div>
                 </div>
+                
             </div>
             @yield('content')
             @yield('list')
