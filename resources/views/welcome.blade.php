@@ -482,7 +482,7 @@
                 </ul>
             </div>
         </div>
-        <div class="md:mr-20 bg-gray-light">
+        <div class="md:mr-20 bg-gray-light h-screen">
             <div class="w-full flex flex-row-reverse">
                 <div class="px-16 w-full mt-14 md:mt-0">
                     <div class="header flex justify-between my-4">
@@ -508,7 +508,7 @@
                             </span>
                         </div>
                         <div class="items-center flex">
-                            <div class="inline-block text-2xl mr-2 text-gray-700">
+                            <div class="inline-block text-xl md:text-2xl mr-2 text-gray-700">
                                 @yield('dashboard')
                             </div>
                             <div class="inline-block relative w-7 h-7 cursor-pointer">
@@ -522,6 +522,7 @@
             </div>
             @yield('content')
             @yield('list')
+            @yield('emptylist')
         </div>
     </body>
 </html>

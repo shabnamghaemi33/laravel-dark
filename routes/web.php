@@ -22,3 +22,6 @@ Route::get('/content', function () {
 Route::get('/list', function () {
     return view('list');
 });
+Route::get('/emptylist', function () {
+    return view('emptylist');
+});

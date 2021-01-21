@@ -2,6 +2,12 @@ module.exports = {
     purge: [],
     darkMode: 'class', // or 'media' or 'class'
     theme: {
+        maxWidth: {
+            'empty': '17.5rem',
+        },
+        minWidth: {
+            '6': '6rem',
+        },
         extend: {
             colors: {
                 'gray-light': '#f2f2f2'
@@ -14,7 +20,6 @@ module.exports = {
             },
             height: {
                 sm: '65px',
-
             },
         },
 
