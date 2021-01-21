@@ -24,10 +24,12 @@ module.exports = {
                 '9/10': '90%',
                 'box': '9.875rem',
                 'price': '8.1875rem',
-                'empty': '5.625rem'
+                'empty': '5.625rem',
+                '70': '4.375rem'
             },
             height: {
                 sm: '65px',
+                70: '4.375rem',
             },
         },
 
