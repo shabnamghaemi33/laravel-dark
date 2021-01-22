@@ -25,7 +25,8 @@ module.exports = {
                 'box': '9.875rem',
                 'price': '8.1875rem',
                 'empty': '5.625rem',
-                '70': '4.375rem'
+                '70': '4.375rem',
+                '68': '17.5rem'
             },
             height: {
                 sm: '65px',

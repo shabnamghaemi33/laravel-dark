@@ -5,8 +5,63 @@
     direction: rtl;
 }
 
-@media screen and (max-width: 768) {
-    .res-menu {
-        display: none !important;
-    }
+.custom-menu-height {
+    height: calc(100% - 60px);
+}
+
+.custom-menu-width {
+    width: calc(100% - 60px);
+}
+
+.custom-dark::before {
+    content: '';
+    top: 10px;
+    left: 10px;
+    border-radius: 50%;
+    background-color: #ffb62e;
+    width: 11px;
+    height: 11px;
+    position: absolute;
+}
+
+.custom-dark::after {
+    content: '';
+    top: 55%;
+    left: 55%;
+    border-radius: 50%;
+    /* background-color: rgb(54, 182, 15); */
+    width: 4px;
+    height: 4px;
+    position: absolute;
+    margin: -4px 0 0 -4px;
+    box-shadow: 0 -11px 0 #ffb62e, 0 11px 0 #ffb62e, 11px 0 0 #ffb62e, -11px 0 0 #ffb62e, 8px 8px 0 #ffb62e, -8px 8px 0 #ffb62e, 8px -8px 0 #ffb62e, -8px -8px 0 #ffb62e;
+}
+
+
+/* add parent class to parent div for dark mode */
+
+.custom-light::before {
+    content: '';
+    top: 6px;
+    left: 6px;
+    border-radius: 50%;
+    background-color: #ffb62e;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+}
+
+.custom-light::after {
+    content: '';
+    top: 3px;
+    right: 3px;
+    border-radius: 50%;
+    background-color: #161515;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+}
+
+.parent {
+    background-color: #161515;
 }
