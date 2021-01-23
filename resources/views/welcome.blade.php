@@ -407,7 +407,7 @@
 
 <body>
     {{-- right menu on windows size --}}
-    <div class="w-20 bg-gray-50 h-screen fixed right-0 pixel:hidden md:block">
+    <div class="w-20 bg-gray-50 h-screen fixed right-0 pixel:hidden md:block dark:bg-gray-900">
         <div class="top-link h-14 flex align-items">
             <a href="/" class="flex mx-auto">
                 <img src="./img/logo.svg" alt="main logo" class="top-logo h-9 my-auto" />
@@ -415,7 +415,7 @@
         </div>
         <div class="bg-gray-50">
             <ul class="">
-                <li class="w-20 h-14 flex items-center border-r-4 border-indigo-700">
+                <li class="w-20 h-14 flex items-center border-r-4 border-indigo-700 dark:bg-gray-900 ">
                     <a href="" class="mx-auto">
                         <svg xmlns="http://www.w3.org/2000/svg" class="text-gray-400 hover:text-indigo-700 " width="24"
                             height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -424,7 +424,7 @@
                         </svg>
                     </a>
                 </li>
-                <li class="w-20 h-14 flex items-center">
+                <li class="w-20 h-14 flex items-center dark:bg-gray-900">
                     <a href="#" class="mx-auto">
                         <svg xmlns="http://www.w3.org/2000/svg" class="text-gray-400 hover:text-indigo-700 " width="24"
                             height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -436,7 +436,7 @@
                         </svg>
                     </a>
                 </li>
-                <li class="w-20 h-14 flex items-center">
+                <li class="w-20 h-14 flex items-center dark:bg-gray-900">
                     <a href="#" class="mx-auto">
                         <svg xmlns="http://www.w3.org/2000/svg" class="text-gray-400 hover:text-indigo-700 " width="24"
                             height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -449,7 +449,7 @@
                         </svg>
                     </a>
                 </li>
-                <li class="w-20 h-14 flex items-center">
+                <li class="w-20 h-14 flex items-center  dark:bg-gray-900">
                     <a href="#" class="mx-auto">
                         <svg xmlns="http://www.w3.org/2000/svg" class="text-gray-400 hover:text-indigo-700 " width="24"
                             height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -467,7 +467,7 @@
                         </svg>
                     </a>
                 </li>
-                <li class="w-20 h-14 flex items-center">
+                <li class="w-20 h-14 flex items-center dark:bg-gray-900">
                     <a href="#" class="mx-auto">
                         <svg xmlns="http://www.w3.org/2000/svg" class="text-gray-400 hover:text-indigo-700 " width="24"
                             height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -1509,7 +1509,7 @@
         </div>
     </div>
     {{-- content --}}
-    <div class="md:mr-20 bg-gray-light h-screen">
+    <div class="md:mr-20 bg-gray-light h-screen dark:bg-gray-700">
         <div class="w-full flex flex-row-reverse">
             <div class="px-4 w-full mt-14 md:mt-0">
                 <div class="header flex justify-between my-4">
@@ -1517,7 +1517,7 @@
                         <span
                             class="relative inline-block items-center transition-all cursor-pointer rounded-full bg-transparent hover:bg-white w-8 h-8">
                             <a href="#" class="">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto mt-2" width="20" height="20"
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto mt-2 dark:text-gray-300" width="20" height="20"
                                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                     stroke-linecap="round" stroke-linejoin="round" class="feather feather-grid">
                                     <rect x="3" y="3" width="7" height="7"></rect>
@@ -1528,8 +1528,8 @@
                             </a>
                         </span>
                         <span
-                            class="relative pixel:hidden md:inline-block items-center ml-4 transition-all cursor-pointer rounded-full bg-transparent hover:bg-white w-8 h-8">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto mt-2" width="20" height="20"
+                            class="relative pixel:hidden md:inline-block items-center ml-4 transition-all cursor-pointer rounded-full bg-transparent hover:bg-white w-8 h-8 dark:text-gray-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto mt-2 dark:text-gray-300" width="20" height="20"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                 stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell">
                                 <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
@@ -1544,7 +1544,7 @@
                             </a>
                         </span>
                         <span
-                            class="relative inline-block ml-4 items-center transition-all cursor-pointer bg-transparent hover:bg-white rounded-full w-8 h-8">
+                            class="relative inline-block ml-4 items-center transition-all cursor-pointer bg-transparent hover:bg-white rounded-full w-8 h-8 mx-auto mt-2 btn-toggle">
                             {{-- <a href="#" class="">
                                 <img src="./img/8.jpg" width="16" height="16" alt="flag" class="mx-auto mt-2" />
                             </a> --}}
@@ -1574,6 +1574,38 @@
         @yield('list')
         @yield('emptylist')
     </div>
+
+
+    <script> 
+// load theme
+const currentTheme = localStorage.getItem("theme");
+//console.log(currentTheme);
+if(currentTheme == 'dark'){
+    document.body.classList.add("dark");
+}
+
+const btn = document.querySelector(".btn-toggle");
+btn.addEventListener("click", function () {
+    //test
+    const currentTheme = localStorage.getItem("theme");
+    //console.log('====================================');
+    //console.log(currentTheme);
+    //console.log('====================================');
+
+    // switch theme
+    document.body.classList.toggle("dark");
+    
+    // save user theme
+    var theme = document.body.classList.contains("dark") ? "dark" : "light";
+    localStorage.setItem("theme", theme);
+
+    // test
+    //console.log('====================================');
+    //console.log(localStorage.getItem("theme"));
+    //console.log('====================================');
+});
+
+</script>
 </body>
 
 </html>

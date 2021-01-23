@@ -39,11 +39,11 @@
         <div class="mt-4">
             <div class="flex flex-col">
                 <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
-                    <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
+                    <div class="py-2 w-full align-middle inline-block min-w-full sm:px-6 lg:px-8">
                         <div class="overflow-hidden">
-                            <table class="min-w-full divide-y rtl mb-4 rounded-md overflow-hidden">
-                                <thead class="bg-white">
-                                    <tr class="">
+                            <table class="w-full divide-y rtl mb-4 rounded-md overflow-hidden ">
+                                <thead class="bg-white dark:bg-gray-800">
+                                    <tr class="dark:bg-gray-800">
                                         <th scope="col"
                                             class="px-2 w-6 py-3 border border-gray-200 text-left text-xs font-medium text-gray-500 relative">
                                             <span
@@ -56,7 +56,7 @@
                                         <th scope="col"
                                             class="px-6 py-3 border min-w-6 w-48 border-gray-200 text-sm md:text-md font-bold text-gray-800">
                                             <div class="flex justify-between">
-                                                <span class="">نام کالا</span>
+                                                <span class="dark:text-gray-300">نام کالا</span>
                                                 <span class="">
                                                     <i class="fa fa-angle-double-down text-gray-500"></i>
                                                 </span>
@@ -94,7 +94,7 @@
                                         </th>
                                     </tr>
 
-                                    <tr class="h-12 bg-gray-100">
+                                    <tr class="h-12 bg-gray-100  dark:bg-gray-800">
                                         <td class=""></td>
                                         <td class=""></td>
                                         <td class="px-4 py-4">
